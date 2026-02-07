@@ -74,6 +74,7 @@ const portfolioItems: PortfolioItem[] = [
   { id: 58, title: 'Capa de Livro 14', category: 'Capas de Livros', image: '/portfolio-images/v11.png' },
   { id: 59, title: 'Nao Era Humana - Rud Gregorio', category: 'Capas de Livros', image: '/portfolio-images/proximo_9.png' },
   { id: 62, title: '30 Dias Sem Reclamar - Camili Gregorio', category: 'Capas de Livros', image: '/portfolio-images/v15.png' },
+  { id: 63, title: '30 Dias Sem Reclamar - Variacao', category: 'Capas de Livros', image: '/portfolio-images/v16.png' },
 ];
 
 const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros'];
