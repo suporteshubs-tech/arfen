@@ -52,7 +52,6 @@ const portfolioItems: PortfolioItem[] = [
   { id: 37, title: 'Design Criativo 3', category: 'Designs', image: '/portfolio-images/in31.png' },
   { id: 38, title: 'Design Criativo 4', category: 'Designs', image: '/portfolio-images/in32.png' },
   { id: 39, title: 'Design Criativo 5', category: 'Designs', image: '/portfolio-images/in33.png' },
-  { id: 40, title: 'Design Criativo 6', category: 'Designs', image: '/portfolio-images/in34.png' },
   { id: 41, title: 'Design Criativo 7', category: 'Designs', image: '/portfolio-images/in35.png' },
   { id: 42, title: 'Design Criativo 8', category: 'Designs', image: '/portfolio-images/in36.jpg' },
   { id: 43, title: 'Design Criativo 9', category: 'Designs', image: '/portfolio-images/in37.png' },
