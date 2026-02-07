@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight, Sparkles, Layers } from 'lucide-react';
+import { ExternalLink, ArrowRight, Sparkles, Layers, Play } from 'lucide-react';
 
-type Category = 'Tudo' | 'Designs' | 'Capas de Livros' | 'Logotipos' | 'Banners';
+type Category = 'Tudo' | 'Designs' | 'Capas de Livros' | 'Logotipos' | 'Banners' | 'Vídeo';
 
 interface PortfolioItem {
   id: number;
@@ -103,7 +103,7 @@ const portfolioItems: PortfolioItem[] = [
   { id: 89, title: 'Banner 6', category: 'Banners', image: '/portfolio-images/b6.webp' },
 ];
 
-const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos', 'Banners'];
+const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos', 'Banners', 'Vídeo'];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>('Tudo');
