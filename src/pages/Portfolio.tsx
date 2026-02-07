@@ -281,8 +281,11 @@ export default function Portfolio() {
             <iframe
               src={selectedVideo.videoUrl}
               className="w-full h-full rounded-2xl"
-              allow="autoplay; fullscreen; picture-in-picture"
+              title={selectedVideo.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
               allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
         </div>
