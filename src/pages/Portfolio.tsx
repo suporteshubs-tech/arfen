@@ -58,6 +58,7 @@ const portfolioItems: PortfolioItem[] = [
   { id: 42, title: 'Design Criativo 8', category: 'Designs', image: '/portfolio-images/in36.jpg' },
   { id: 43, title: 'Design Criativo 9', category: 'Designs', image: '/portfolio-images/in37.png' },
   { id: 44, title: 'Design Criativo 10', category: 'Designs', image: '/portfolio-images/in38.png' },
+  { id: 60, title: 'Design Criativo 11', category: 'Designs', image: '/portfolio-images/in40.png' },
   { id: 45, title: 'Capa de Livro 1', category: 'Capas de Livros', image: '/portfolio-images/capa1.png' },
   { id: 46, title: 'Capa de Livro 2', category: 'Capas de Livros', image: '/portfolio-images/capa2.png' },
   { id: 47, title: 'Capa de Livro 3', category: 'Capas de Livros', image: '/portfolio-images/capa3.png' },
