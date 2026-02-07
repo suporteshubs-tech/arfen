@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight, Sparkles, Layers } from 'lucide-react';
 
-type Category = 'Tudo' | 'Designs' | 'Capas de Livros' | 'Logotipos';
+type Category = 'Tudo' | 'Designs' | 'Capas de Livros' | 'Logotipos' | 'Banners';
 
 interface PortfolioItem {
   id: number;
@@ -95,9 +95,15 @@ const portfolioItems: PortfolioItem[] = [
   { id: 80, title: 'Logotipo 17', category: 'Logotipos', image: '/portfolio-images/l17.jpg' },
   { id: 82, title: 'FlyTec - Servicos Aeronauticos', category: 'Logotipos', image: '/portfolio-images/image-1770408808283.png' },
   { id: 83, title: 'FlyTec - Logo Variacao', category: 'Logotipos', image: '/portfolio-images/image-1770409692578.png' },
+  { id: 84, title: 'Banner 1', category: 'Banners', image: '/portfolio-images/bn1.jpg' },
+  { id: 85, title: 'Banner 2', category: 'Banners', image: '/portfolio-images/bn_2.jpg' },
+  { id: 86, title: 'Banner 3', category: 'Banners', image: '/portfolio-images/bn3.jpg' },
+  { id: 87, title: 'Banner 4', category: 'Banners', image: '/portfolio-images/bn4.jpg' },
+  { id: 88, title: 'Banner 5', category: 'Banners', image: '/portfolio-images/bn5.jpg' },
+  { id: 89, title: 'Banner 6', category: 'Banners', image: '/portfolio-images/b6.webp' },
 ];
 
-const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos'];
+const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos', 'Banners'];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>('Tudo');
