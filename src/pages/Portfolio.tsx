@@ -75,6 +75,7 @@ const portfolioItems: PortfolioItem[] = [
   { id: 59, title: 'Nao Era Humana - Rud Gregorio', category: 'Capas de Livros', image: '/portfolio-images/proximo_9.png' },
   { id: 62, title: '30 Dias Sem Reclamar - Camili Gregorio', category: 'Capas de Livros', image: '/portfolio-images/v15.png' },
   { id: 63, title: '30 Dias Sem Reclamar - Variacao', category: 'Capas de Livros', image: '/portfolio-images/v16.png' },
+  { id: 81, title: 'Capa de Livro 15', category: 'Capas de Livros', image: '/portfolio-images/proximo_16.jpeg' },
   { id: 64, title: 'Logotipo 1', category: 'Logotipos', image: '/portfolio-images/l1.jpg' },
   { id: 65, title: 'Logotipo 2', category: 'Logotipos', image: '/portfolio-images/l2.jpg' },
   { id: 66, title: 'Logotipo 3', category: 'Logotipos', image: '/portfolio-images/l3.jpg' },
