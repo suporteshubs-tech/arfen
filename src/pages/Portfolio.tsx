@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight, Sparkles, Layers } from 'lucide-react';
 
-type Category = 'Tudo' | 'Designs' | 'Capas de Livros';
+type Category = 'Tudo' | 'Designs' | 'Capas de Livros' | 'Logotipos';
 
 interface PortfolioItem {
   id: number;
@@ -77,7 +77,7 @@ const portfolioItems: PortfolioItem[] = [
   { id: 63, title: '30 Dias Sem Reclamar - Variacao', category: 'Capas de Livros', image: '/portfolio-images/v16.png' },
 ];
 
-const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros'];
+const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos'];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>('Tudo');
