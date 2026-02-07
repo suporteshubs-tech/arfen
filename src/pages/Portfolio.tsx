@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight, Sparkles, Layers, Play } from 'lucide-react';
+import { ExternalLink, ArrowRight, Sparkles, Layers, Play, X } from 'lucide-react';
 
 type Category = 'Tudo' | 'Designs' | 'Capas de Livros' | 'Logotipos' | 'Banners' | 'Vídeo';
 
@@ -101,12 +101,28 @@ const portfolioItems: PortfolioItem[] = [
   { id: 87, title: 'Banner 4', category: 'Banners', image: '/portfolio-images/bn4.jpg' },
   { id: 88, title: 'Banner 5', category: 'Banners', image: '/portfolio-images/bn5.jpg' },
   { id: 89, title: 'Banner 6', category: 'Banners', image: '/portfolio-images/b6.webp' },
+  { id: 100, title: 'Video Promocional 1', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049276275' },
+  { id: 101, title: 'Video Promocional 2', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1066763132' },
+  { id: 102, title: 'Video Promocional 3', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1070845669' },
+  { id: 103, title: 'Video Promocional 4', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1051635211' },
+  { id: 104, title: 'Video Promocional 5', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1068651674' },
+  { id: 105, title: 'Video Promocional 6', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049265993' },
+  { id: 106, title: 'Video Promocional 7', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049285477' },
+  { id: 107, title: 'Video Promocional 8', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1065650245' },
+  { id: 108, title: 'Video Promocional 9', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1068653190' },
+  { id: 109, title: 'Video YouTube 1', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/7JXGkvbQrlQ' },
+  { id: 110, title: 'Video YouTube 2', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/riZdOEwtlWg' },
+  { id: 111, title: 'Video YouTube 3', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/xFmQ2uDVP0g' },
+  { id: 112, title: 'Video YouTube 4', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/a7HxhH1iXFQ' },
+  { id: 113, title: 'Video YouTube 5', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/It914UU3hzk' },
+  { id: 114, title: 'Video YouTube 6', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/vsAcwjO_M2M' },
 ];
 
 const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos', 'Banners', 'Vídeo'];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>('Tudo');
+  const [selectedVideo, setSelectedVideo] = useState<PortfolioItem | null>(null);
 
   const filteredItems = activeCategory === 'Tudo'
     ? portfolioItems
@@ -153,33 +169,61 @@ export default function Portfolio() {
         {filteredItems.length > 0 && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
             {filteredItems.map((item) => (
-              <Link
-                key={item.id}
-                to={`/portfolio/${item.id}`}
-                className="group relative glassmorphism rounded-2xl overflow-hidden hover-lift cursor-pointer"
-              >
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+              item.isVideo ? (
+                <div
+                  key={item.id}
+                  onClick={() => setSelectedVideo(item)}
+                  className="group relative glassmorphism rounded-2xl overflow-hidden hover-lift cursor-pointer"
+                >
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#030306] via-[#030306]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-5 w-full">
-                    <p className="text-white font-bold text-sm truncate mb-1">{item.title}</p>
-                    <p className="text-cyan-400 text-xs font-medium">{item.category}</p>
+                  <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
+                    <div className="w-20 h-20 bg-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-cyan-500/30">
+                      <Play className="text-cyan-400 ml-1" size={32} fill="currentColor" />
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#030306] via-[#030306]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-5 w-full">
+                      <p className="text-white font-bold text-sm truncate mb-1">{item.title}</p>
+                      <p className="text-cyan-400 text-xs font-medium">{item.category}</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <Play className="text-white" size={18} />
+                    </div>
                   </div>
                 </div>
+              ) : (
+                <Link
+                  key={item.id}
+                  to={`/portfolio/${item.id}`}
+                  className="group relative glassmorphism rounded-2xl overflow-hidden hover-lift cursor-pointer"
+                >
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <ExternalLink className="text-white" size={18} />
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
                   </div>
-                </div>
-              </Link>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#030306] via-[#030306]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-5 w-full">
+                      <p className="text-white font-bold text-sm truncate mb-1">{item.title}</p>
+                      <p className="text-cyan-400 text-xs font-medium">{item.category}</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <ExternalLink className="text-white" size={18} />
+                    </div>
+                  </div>
+                </Link>
+              )
             ))}
           </div>
         )}
@@ -218,6 +262,31 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+
+      {selectedVideo && (
+        <div
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedVideo(null)}
+        >
+          <div
+            className="relative w-full max-w-5xl aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedVideo(null)}
+              className="absolute -top-12 right-0 w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+            >
+              <X className="text-white" size={24} />
+            </button>
+            <iframe
+              src={selectedVideo.videoUrl}
+              className="w-full h-full rounded-2xl"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
