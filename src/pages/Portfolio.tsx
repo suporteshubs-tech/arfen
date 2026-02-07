@@ -101,21 +101,21 @@ const portfolioItems: PortfolioItem[] = [
   { id: 87, title: 'Banner 4', category: 'Banners', image: '/portfolio-images/bn4.jpg' },
   { id: 88, title: 'Banner 5', category: 'Banners', image: '/portfolio-images/bn5.jpg' },
   { id: 89, title: 'Banner 6', category: 'Banners', image: '/portfolio-images/b6.webp' },
-  { id: 100, title: 'Video Promocional 1', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049276275' },
-  { id: 101, title: 'Video Promocional 2', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1066763132' },
-  { id: 102, title: 'Video Promocional 3', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1070845669' },
-  { id: 103, title: 'Video Promocional 4', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1051635211' },
-  { id: 104, title: 'Video Promocional 5', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1068651674' },
-  { id: 105, title: 'Video Promocional 6', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049265993' },
-  { id: 106, title: 'Video Promocional 7', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049285477' },
-  { id: 107, title: 'Video Promocional 8', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1065650245' },
-  { id: 108, title: 'Video Promocional 9', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1068653190' },
-  { id: 109, title: 'Video YouTube 1', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/7JXGkvbQrlQ' },
-  { id: 110, title: 'Video YouTube 2', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/riZdOEwtlWg' },
-  { id: 111, title: 'Video YouTube 3', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/xFmQ2uDVP0g' },
-  { id: 112, title: 'Video YouTube 4', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/a7HxhH1iXFQ' },
-  { id: 113, title: 'Video YouTube 5', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/It914UU3hzk' },
-  { id: 114, title: 'Video YouTube 6', category: 'Vídeo', image: '', isVideo: true, videoUrl: 'https://www.youtube.com/embed/vsAcwjO_M2M' },
+  { id: 100, title: 'Video Promocional 1', category: 'Vídeo', image: 'https://vumbnail.com/1049276275.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049276275?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 101, title: 'Video Promocional 2', category: 'Vídeo', image: 'https://vumbnail.com/1066763132.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1066763132?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 102, title: 'Video Promocional 3', category: 'Vídeo', image: 'https://vumbnail.com/1070845669.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1070845669?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 103, title: 'Video Promocional 4', category: 'Vídeo', image: 'https://vumbnail.com/1051635211.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1051635211?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 104, title: 'Video Promocional 5', category: 'Vídeo', image: 'https://vumbnail.com/1068651674.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1068651674?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 105, title: 'Video Promocional 6', category: 'Vídeo', image: 'https://vumbnail.com/1049265993.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049265993?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 106, title: 'Video Promocional 7', category: 'Vídeo', image: 'https://vumbnail.com/1049285477.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1049285477?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 107, title: 'Video Promocional 8', category: 'Vídeo', image: 'https://vumbnail.com/1065650245.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1065650245?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 108, title: 'Video Promocional 9', category: 'Vídeo', image: 'https://vumbnail.com/1068653190.jpg', isVideo: true, videoUrl: 'https://player.vimeo.com/video/1068653190?badge=0&autopause=0&player_id=0&app_id=58479' },
+  { id: 109, title: 'Video YouTube 1', category: 'Vídeo', image: 'https://img.youtube.com/vi/7JXGkvbQrlQ/maxresdefault.jpg', isVideo: true, videoUrl: 'https://www.youtube.com/embed/7JXGkvbQrlQ?rel=0&modestbranding=1' },
+  { id: 110, title: 'Video YouTube 2', category: 'Vídeo', image: 'https://img.youtube.com/vi/riZdOEwtlWg/maxresdefault.jpg', isVideo: true, videoUrl: 'https://www.youtube.com/embed/riZdOEwtlWg?rel=0&modestbranding=1' },
+  { id: 111, title: 'Video YouTube 3', category: 'Vídeo', image: 'https://img.youtube.com/vi/xFmQ2uDVP0g/maxresdefault.jpg', isVideo: true, videoUrl: 'https://www.youtube.com/embed/xFmQ2uDVP0g?rel=0&modestbranding=1' },
+  { id: 112, title: 'Video YouTube 4', category: 'Vídeo', image: 'https://img.youtube.com/vi/a7HxhH1iXFQ/maxresdefault.jpg', isVideo: true, videoUrl: 'https://www.youtube.com/embed/a7HxhH1iXFQ?rel=0&modestbranding=1' },
+  { id: 113, title: 'Video YouTube 5', category: 'Vídeo', image: 'https://img.youtube.com/vi/It914UU3hzk/maxresdefault.jpg', isVideo: true, videoUrl: 'https://www.youtube.com/embed/It914UU3hzk?rel=0&modestbranding=1' },
+  { id: 114, title: 'Video YouTube 6', category: 'Vídeo', image: 'https://img.youtube.com/vi/vsAcwjO_M2M/maxresdefault.jpg', isVideo: true, videoUrl: 'https://www.youtube.com/embed/vsAcwjO_M2M?rel=0&modestbranding=1' },
 ];
 
 const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos', 'Banners', 'Vídeo'];
@@ -177,9 +177,21 @@ export default function Portfolio() {
                 >
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                  <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
-                    <div className="w-20 h-20 bg-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-cyan-500/30">
-                      <Play className="text-cyan-400 ml-1" size={32} fill="currentColor" />
+                  <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 relative">
+                    {item.image ? (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                    ) : null}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <div className="w-20 h-20 bg-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-cyan-500/30">
+                        <Play className="text-cyan-400 ml-1" size={32} fill="currentColor" />
+                      </div>
                     </div>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#030306] via-[#030306]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
