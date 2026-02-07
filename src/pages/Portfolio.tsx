@@ -75,6 +75,23 @@ const portfolioItems: PortfolioItem[] = [
   { id: 59, title: 'Nao Era Humana - Rud Gregorio', category: 'Capas de Livros', image: '/portfolio-images/proximo_9.png' },
   { id: 62, title: '30 Dias Sem Reclamar - Camili Gregorio', category: 'Capas de Livros', image: '/portfolio-images/v15.png' },
   { id: 63, title: '30 Dias Sem Reclamar - Variacao', category: 'Capas de Livros', image: '/portfolio-images/v16.png' },
+  { id: 64, title: 'Logotipo 1', category: 'Logotipos', image: '/portfolio-images/l1.jpg' },
+  { id: 65, title: 'Logotipo 2', category: 'Logotipos', image: '/portfolio-images/l2.jpg' },
+  { id: 66, title: 'Logotipo 3', category: 'Logotipos', image: '/portfolio-images/l3.jpg' },
+  { id: 67, title: 'Logotipo 4', category: 'Logotipos', image: '/portfolio-images/l4.jpg' },
+  { id: 68, title: 'Logotipo 5', category: 'Logotipos', image: '/portfolio-images/l5.jpg' },
+  { id: 69, title: 'Logotipo 6', category: 'Logotipos', image: '/portfolio-images/l6.jpg' },
+  { id: 70, title: 'Logotipo 7', category: 'Logotipos', image: '/portfolio-images/l7.jpg' },
+  { id: 71, title: 'Logotipo 8', category: 'Logotipos', image: '/portfolio-images/l8.jpg' },
+  { id: 72, title: 'Logotipo 9', category: 'Logotipos', image: '/portfolio-images/l9.jpg' },
+  { id: 73, title: 'Logotipo 10', category: 'Logotipos', image: '/portfolio-images/l10.webp' },
+  { id: 74, title: 'Logotipo 11', category: 'Logotipos', image: '/portfolio-images/l11.webp' },
+  { id: 75, title: 'Logotipo 12', category: 'Logotipos', image: '/portfolio-images/l12.webp' },
+  { id: 76, title: 'Logotipo 13', category: 'Logotipos', image: '/portfolio-images/l13.webp' },
+  { id: 77, title: 'Logotipo 14', category: 'Logotipos', image: '/portfolio-images/l14.png' },
+  { id: 78, title: 'Logotipo 15', category: 'Logotipos', image: '/portfolio-images/l15.png' },
+  { id: 79, title: 'Logotipo 16', category: 'Logotipos', image: '/portfolio-images/l16.png' },
+  { id: 80, title: 'Logotipo 17', category: 'Logotipos', image: '/portfolio-images/l17.jpg' },
 ];
 
 const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos'];
