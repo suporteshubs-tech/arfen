@@ -93,6 +93,8 @@ const portfolioItems: PortfolioItem[] = [
   { id: 78, title: 'Logotipo 15', category: 'Logotipos', image: '/portfolio-images/l15.png' },
   { id: 79, title: 'Logotipo 16', category: 'Logotipos', image: '/portfolio-images/l16.png' },
   { id: 80, title: 'Logotipo 17', category: 'Logotipos', image: '/portfolio-images/l17.jpg' },
+  { id: 82, title: 'FlyTec - Servicos Aeronauticos', category: 'Logotipos', image: '/portfolio-images/image-1770408808283.png' },
+  { id: 83, title: 'FlyTec - Logo Variacao', category: 'Logotipos', image: '/portfolio-images/image-1770409692578.png' },
 ];
 
 const categories: Category[] = ['Tudo', 'Designs', 'Capas de Livros', 'Logotipos'];
