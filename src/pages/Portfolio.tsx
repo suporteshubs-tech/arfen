@@ -22,7 +22,6 @@ const portfolioItems: PortfolioItem[] = [
   { id: 6, title: 'Barbearia - Social Media', category: 'Designs', image: '/portfolio-images/art6.png' },
   { id: 7, title: 'Gardens Fusion - Evento Cafe', category: 'Designs', image: '/portfolio-images/art7.png' },
   { id: 8, title: 'Arfen - Design Conceito', category: 'Designs', image: '/portfolio-images/art8.png' },
-  { id: 9, title: 'Gardens Fusion - Carnaval', category: 'Designs', image: '/portfolio-images/art9.png' },
   { id: 10, title: 'Gardens Fusion - Tropical', category: 'Designs', image: '/portfolio-images/art10.png' },
   { id: 11, title: 'Design Premium', category: 'Designs', image: '/portfolio-images/art11.jpg' },
   { id: 12, title: 'Design Criativo', category: 'Designs', image: '/portfolio-images/art12.jpg' },
