@@ -74,7 +74,6 @@ export default function Portfolio() {
           <h2 className="mt-5 font-display text-4xl font-bold text-foreground md:text-5xl">
             Portfolio
           </h2>
-          <div className="animate-line-expand mx-auto mt-5 h-0.5 w-12 rounded-full bg-gradient-to-r from-primary/60 to-primary/20" />
         </div>
 
         {/* Marquee rows per category */}

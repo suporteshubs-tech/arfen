@@ -54,7 +54,6 @@ export default function Founders() {
           <h2 className="mt-5 font-display text-4xl font-bold text-foreground md:text-5xl">
             Os Fundadores
           </h2>
-          <div className="animate-line-expand mx-auto mt-5 h-0.5 w-12 rounded-full bg-gradient-to-r from-primary/60 to-primary/20" />
         </div>
 
         <div className="mt-20 grid gap-8 md:grid-cols-2">
