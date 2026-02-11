@@ -35,7 +35,6 @@ export default function Testimonials() {
           <h2 className="mt-5 font-display text-balance text-4xl font-bold text-foreground md:text-5xl">
             O Que Nossos Clientes <span className="gradient-text">Dizem</span>
           </h2>
-          <div className="animate-line-expand mx-auto mt-5 h-0.5 w-12 rounded-full bg-gradient-to-r from-primary/60 to-primary/20" />
         </div>
 
         <div className="mt-20 grid gap-6 md:grid-cols-3">

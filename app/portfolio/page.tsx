@@ -41,7 +41,6 @@ export default function PortfolioPage() {
               <h1 className="mt-5 font-display text-5xl font-bold text-foreground md:text-6xl">
                 Nossos Projetos
               </h1>
-              <div className="animate-line-expand mx-auto mt-5 h-0.5 w-12 rounded-full bg-gradient-to-r from-primary/60 to-primary/20" />
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
                 Explore todos os projetos realizados pela Arfen Agencia
               </p>

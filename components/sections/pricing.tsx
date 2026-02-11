@@ -68,7 +68,6 @@ export default function Pricing() {
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
             Escolha o plano ideal para sua empresa e comece a transformar sua presenca digital hoje mesmo.
           </p>
-          <div className="animate-line-expand mx-auto mt-5 h-0.5 w-12 rounded-full bg-gradient-to-r from-primary/60 to-primary/20" />
         </div>
 
         <div className="mt-20 grid gap-6 lg:grid-cols-3">
