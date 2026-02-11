@@ -3,8 +3,18 @@ import type { Metadata } from "next"
 import { Inter, Space_Grotesk } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" })
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-inter",
+  display: 'swap',
+  preload: true,
+})
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"], 
+  variable: "--font-space-grotesk",
+  display: 'swap',
+  preload: true,
+})
 
 export const metadata: Metadata = {
   title: "Arfen Agencia - Eleve Sua Empresa a Um Novo Nivel de Autoridade",
