@@ -13,6 +13,7 @@ export interface Project {
   image: string
   description: string
   videoUrl?: string
+  siteUrl?: string
 }
 
 export const projects: Project[] = [
@@ -1437,6 +1438,7 @@ export const projects: Project[] = [
     teamRole: "Web Design & Dev",
     image: "/sites/restart-ajuda.png",
     description: "Landing page institucional dark com tipografia impactante ciano, CTA de conversao e video embed integrado.",
+    siteUrl: "https://restart-ajuda.vercel.app",
   },
   {
     slug: "megaclick-landing-site",
@@ -1450,6 +1452,7 @@ export const projects: Project[] = [
     teamRole: "SaaS Landing Page",
     image: "/sites/megaclick-landing.png",
     description: "Landing page SaaS dark-blue com metricas de resultados, cards de beneficios e CTA de conversao otimizado.",
+    siteUrl: "https://www.megaclickboost.com",
   },
   {
     slug: "vida-financeira-landing-site",
@@ -1463,6 +1466,7 @@ export const projects: Project[] = [
     teamRole: "Sales Page Design",
     image: "/sites/vida-financeira-landing.png",
     description: "Pagina de vendas premium dark-gold com metodologia comprovada, video de apresentacao e prova social.",
+    siteUrl: "https://www.metodocodigodariqueza.com",
   },
   {
     slug: "freebook-colecao-site",
@@ -1476,6 +1480,7 @@ export const projects: Project[] = [
     teamRole: "E-commerce Digital",
     image: "/sites/freebook-colecao.png",
     description: "Plataforma de livros digitais dark-gold com carrossel de colecoes, cards de produtos e design editorial premium.",
+    siteUrl: "https://v0-bookgrid.vercel.app/",
   },
   {
     slug: "mega-clique-dashboard-site",
@@ -1489,6 +1494,7 @@ export const projects: Project[] = [
     teamRole: "Dashboard & App Web",
     image: "/sites/mega-clique-dashboard.png",
     description: "Dashboard SaaS dark com graficos de performance, KPIs coloridos, taxa de sucesso e analises diarias.",
+    siteUrl: "https://megaclick.bolt.host/",
   },
   {
     slug: "textium-ebook-store-site",
@@ -1515,6 +1521,7 @@ export const projects: Project[] = [
     teamRole: "E-commerce Esportivo",
     image: "/sites/st-city-store.png",
     description: "E-commerce dark-gold de camisas de futebol com banner hero dinamico, bandeira do Brasil e navegacao por categorias.",
+    siteUrl: "https://streetcity.lojavirtualnuvem.com.br/?preview_theme_installation_id=6162882",
   },
   {
     slug: "svk-store-site",
@@ -1528,6 +1535,7 @@ export const projects: Project[] = [
     teamRole: "E-commerce Fashion",
     image: "/sites/svk-store.png",
     description: "E-commerce de moda masculina light-yellow com grid de produtos, precos com desconto e navegacao por categorias.",
+    siteUrl: "https://prefixsyk2.lojavirtualnuvem.com.br/?exit_preview_theme_installation",
   },
   {
     slug: "bookgrid-library-site",
@@ -1541,6 +1549,7 @@ export const projects: Project[] = [
     teamRole: "Plataforma Digital",
     image: "/sites/bookgrid-library.png",
     description: "Plataforma de livros digitais dark com fundo de estante, busca por titulo/autor, tags de categorias e CTA gold Explore Full Library.",
+    siteUrl: "https://www.ebookgridstore.com",
   },
 ]
 

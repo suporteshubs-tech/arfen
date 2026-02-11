@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "Arfen Agencia - Eleve Sua Empresa a Um Novo Nivel de Autoridade",
   description:
     "Transformamos sua presenca digital e elevamos sua marca a um novo nivel de autoridade no mercado.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
