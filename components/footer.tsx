@@ -80,7 +80,7 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-foreground">Contato</h3>
             <div className="mt-5 flex flex-col gap-4">
               {[
-                { icon: Phone, text: "(11) 99999-9999" },
+                { icon: Phone, text: "+55 (11) 99258-0843" },
                 { icon: Mail, text: "contato@arfen.ag" },
                 { icon: MapPin, text: "Sao Paulo, SP" },
               ].map(({ icon: Icon, text }) => (
