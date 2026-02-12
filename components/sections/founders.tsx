@@ -28,7 +28,7 @@ export default function Founders() {
           alt="Fundadores Arfen"
           fill
           className="object-cover object-center"
-          quality={70}
+          quality={75}
           loading="lazy"
           sizes="100vw"
         />
