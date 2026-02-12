@@ -84,7 +84,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Jan 2026",
     project: "Site Institucional",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20tela%202025-01-29%20150949-XdjGNlYXpXGJSQQW0iiGNh9gqvT1wO.png",
   },
   {
     name: "Mariana Souza",
@@ -93,7 +93,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Dez 2025",
     project: "Identidade Visual",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cortes-3bfGAez51OYFAd6bSLVTzUS02oLmUC.png",
   },
   {
     name: "Thiago Nunes",
@@ -102,7 +102,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Nov 2025",
     project: "Material Grafico",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-CQ0dQaVpvEQqQfDweFu0s9pKcvgU9n.jpeg",
   },
   {
     name: "Beatriz Cardoso",
@@ -111,7 +111,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Out 2025",
     project: "Capa de Livro",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capa%20do%20livro%2019-P4HcCXZyFb80qhOJ5N59HwEvZhBYpK.png",
   },
   {
     name: "Ricardo Gomes",
@@ -120,7 +120,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Set 2025",
     project: "Video Institucional",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1770747240192-bRUCofWuDH1t8Srw8DqEHHAj1JoUOU.png",
   },
   {
     name: "Isabela Martins",
@@ -129,7 +129,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Ago 2025",
     project: "E-commerce",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20tela%202025-01-29%20151106-cIMHjMIb1DPkUi3PJAqYqGAHpTHuXJ.png",
   },
   {
     name: "Gabriel Ribeiro",
@@ -138,7 +138,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Jul 2025",
     project: "Landing Page",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20tela%202025-01-29%20150959-KMrZyJiZr90jPFjpLIiHrEuQkOMzDM.png",
   },
   {
     name: "Fernanda Almeida",
@@ -147,7 +147,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Jun 2025",
     project: "Material para Evento",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11-NJ5IaZLipiaIkqBL4r7xjaV9GPlgrp.png",
   },
   {
     name: "Hugo Dias",
@@ -156,7 +156,7 @@ const projectTestimonials = [
     rating: 5,
     date: "Mai 2025",
     project: "Apresentacao Corporativa",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tecnologia%20%2850%29-86Nf8hEg9igd3KgKnvL5iwOWfnl50F.png",
   },
 ]
 
