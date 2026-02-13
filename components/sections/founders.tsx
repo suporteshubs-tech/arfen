@@ -28,7 +28,7 @@ export default function Founders() {
           alt="Fundadores Arfen"
           fill
           className="object-cover object-center"
-          quality={60}
+          quality={75}
           loading="lazy"
           sizes="100vw"
           placeholder="blur"
@@ -72,7 +72,7 @@ export default function Founders() {
                 alt={founder.name}
                 fill
                 loading="lazy"
-                quality={60}
+                quality={75}
                 className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
