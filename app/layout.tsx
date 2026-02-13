@@ -8,12 +8,16 @@ const inter = Inter({
   variable: "--font-inter",
   display: 'swap',
   preload: true,
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
 })
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ["latin"], 
   variable: "--font-space-grotesk",
   display: 'swap',
   preload: true,
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {

@@ -52,8 +52,9 @@ function MarqueeCard({
           alt={project.title}
           fill
           loading="lazy"
+          quality={60}
           sizes="(max-width: 768px) 260px, 300px"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
       <div className="px-4 py-3">
@@ -82,8 +83,11 @@ export default function Portfolio() {
         {/* Marquee rows per category */}
         <div className="mt-14 space-y-8">
           {categories.map((category) => {
-            const projects = getProjectsByCategory(category.id)
-            if (projects.length === 0) return null
+            const allProjects = getProjectsByCategory(category.id)
+            if (allProjects.length === 0) return null
+            
+            // Limit to first 8 projects for performance
+            const projects = allProjects.slice(0, 8)
 
             const animClass =
               category.direction === "left"

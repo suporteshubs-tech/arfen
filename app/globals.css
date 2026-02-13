@@ -68,20 +68,32 @@ html {
   }
 }
 
-/* Use GPU acceleration for animations */
+/* Use GPU acceleration and containment for animations */
 .animate-float,
 .animate-glow-pulse,
 .animate-mesh,
 .animate-marquee-left,
 .animate-marquee-right {
-  will-change: transform;
+  will-change: auto;
   transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize images and media */
+img, video, iframe {
+  content-visibility: auto;
+}
+
+/* Optimize heavy sections */
+section {
+  contain: layout style paint;
 }
 
 /* Animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10px, 0); }
 }
 
 @keyframes shimmer {
@@ -90,8 +102,8 @@ html {
 }
 
 @keyframes glow-pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
 }
 
 @keyframes fade-in-up {
@@ -110,10 +122,8 @@ html {
 }
 
 @keyframes mesh-move {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(30px, -30px) rotate(5deg); }
-  50% { transform: translate(-20px, 20px) rotate(-3deg); }
-  75% { transform: translate(10px, -10px) rotate(2deg); }
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(15px, -15px); }
 }
 
 @keyframes line-expand {
@@ -147,7 +157,7 @@ html {
 }
 
 .animate-mesh {
-  animation: mesh-move 20s ease-in-out infinite;
+  animation: mesh-move 30s ease-in-out infinite;
 }
 
 .animate-line-expand {
@@ -163,17 +173,17 @@ html {
 .delay-700 { animation-delay: 0.7s; }
 .delay-800 { animation-delay: 0.8s; }
 
-/* Glass effects */
+/* Glass effects - optimized blur values */
 .glass {
   background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .glass-strong {
   background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Text effects */
@@ -230,11 +240,11 @@ html {
 }
 
 .animate-marquee-left {
-  animation: marquee-left 60s linear infinite;
+  animation: marquee-left 40s linear infinite;
 }
 
 .animate-marquee-right {
-  animation: marquee-right 60s linear infinite;
+  animation: marquee-right 40s linear infinite;
 }
 
 .marquee-row:hover .animate-marquee-left,

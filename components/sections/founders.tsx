@@ -28,9 +28,11 @@ export default function Founders() {
           alt="Fundadores Arfen"
           fill
           className="object-cover object-center"
-          quality={75}
+          quality={60}
           loading="lazy"
           sizes="100vw"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAA8A/9k="
         />
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-[#050505]/85" />
@@ -70,8 +72,8 @@ export default function Founders() {
                 alt={founder.name}
                 fill
                 loading="lazy"
-                quality={75}
-                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                quality={60}
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
 
