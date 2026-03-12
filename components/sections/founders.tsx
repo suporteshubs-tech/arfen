@@ -28,7 +28,6 @@ export default function Founders() {
           alt="Fundadores Arfen"
           fill
           className="object-cover object-center"
-          quality={90}
         />
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-[#050505]/85" />
