@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from "next"
 import { Inter, Space_Grotesk } from "next/font/google"
 import "./globals.css"
+import WhatsAppFloat from "@/components/whatsapp-float"
 
 const inter = Inter({ 
   subsets: ["latin"], 
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
+        <WhatsAppFloat />
       </body>
     </html>
   )
