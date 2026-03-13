@@ -58,7 +58,9 @@ export default function Hero() {
           {/* CTAs */}
           <div className="animate-fade-in-up delay-300 mt-12 flex flex-wrap items-center gap-5">
             <Link
-              href="/#contato"
+              href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 rounded-full bg-primary px-10 py-4 text-sm font-bold text-primary-foreground shadow-2xl shadow-primary/25 transition-all duration-300 hover:shadow-primary/40 hover:brightness-110"
             >
               Comece Agora
