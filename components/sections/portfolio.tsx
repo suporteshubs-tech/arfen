@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Palette, BookOpen, PenTool, Video, Globe } from "lucide-react"
 import { getProjectsByCategory } from "@/lib/portfolio-data"
 
@@ -46,14 +45,12 @@ function MarqueeCard({
       href={`/portfolio/${project.slug}`}
       className="group mx-2.5 w-[260px] flex-shrink-0 overflow-hidden rounded-xl border border-border/20 bg-card/30 transition-colors duration-300 hover:border-primary/20 md:w-[300px]"
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <Image
+      <div className="aspect-[4/3] overflow-hidden">
+        <img
           src={project.image || "/placeholder.svg"}
           alt={project.title}
-          fill
           loading="lazy"
-          sizes="(max-width: 768px) 260px, 300px"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
       <div className="px-4 py-3">

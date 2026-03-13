@@ -28,9 +28,6 @@ export default function Founders() {
           alt="Fundadores Arfen"
           fill
           className="object-cover object-center"
-          quality={70}
-          loading="lazy"
-          sizes="100vw"
         />
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-[#050505]/85" />
@@ -69,8 +66,6 @@ export default function Founders() {
                 src={founder.image || "/placeholder.svg"}
                 alt={founder.name}
                 fill
-                loading="lazy"
-                quality={75}
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />

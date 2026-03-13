@@ -28,9 +28,9 @@ export default function Header() {
           <Image
             src="/logo-arfen.png"
             alt="Arfen Agencia"
-            width={200}
-            height={65}
-            className="h-14 w-auto object-contain transition-opacity duration-300 group-hover:opacity-80 md:h-16"
+            width={160}
+            height={52}
+            className="h-11 w-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
             priority
           />
         </Link>
