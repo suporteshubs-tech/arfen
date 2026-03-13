@@ -114,7 +114,9 @@ export default function Pricing() {
                   </ul>
 
                   <Link
-                    href="/#contato"
+                    href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`mt-10 block rounded-full py-3.5 text-center text-sm font-semibold transition-all duration-300 ${
                       plan.highlighted
                         ? "bg-primary text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:brightness-110"

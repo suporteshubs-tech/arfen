@@ -80,15 +80,26 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-foreground">Contato</h3>
             <div className="mt-5 flex flex-col gap-4">
               {[
-                { icon: Phone, text: "(11) 99999-9999" },
-                { icon: Mail, text: "contato@arfen.ag" },
-                { icon: MapPin, text: "Sao Paulo, SP" },
-              ].map(({ icon: Icon, text }) => (
+                { icon: Phone, text: "(11) 99999-9999", href: "https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0" },
+                { icon: Mail, text: "contato@arfen.ag", href: "mailto:contato@arfen.ag" },
+                { icon: MapPin, text: "Sao Paulo, SP", href: null },
+              ].map(({ icon: Icon, text, href }) => (
                 <div key={text} className="flex items-center gap-3 text-sm text-muted-foreground">
                   <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg border border-border/30 bg-primary/5 text-primary">
                     <Icon className="h-3.5 w-3.5" />
                   </div>
-                  <span>{text}</span>
+                  {href ? (
+                    <a 
+                      href={href}
+                      target={href.startsWith("http") ? "_blank" : undefined}
+                      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {text}
+                    </a>
+                  ) : (
+                    <span>{text}</span>
+                  )}
                 </div>
               ))}
             </div>

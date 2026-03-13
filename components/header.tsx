@@ -59,7 +59,7 @@ export default function Header() {
             className="rounded-full bg-primary px-7 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:brightness-110 hover:shadow-lg hover:shadow-primary/25"
           >
             Fale Conosco
-          </Link>
+          </a>
         </div>
 
         <button

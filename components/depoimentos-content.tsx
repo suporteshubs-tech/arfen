@@ -293,14 +293,16 @@ export default function DepoimentosContent() {
             Junte-se a dezenas de empresas que ja transformaram sua presenca digital com a Arfen.
           </p>
           <div className="mt-10">
-            <Link
-              href="/#contato"
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-primary px-12 py-4 text-sm font-bold text-primary-foreground shadow-2xl shadow-primary/25 transition-all duration-300 hover:shadow-primary/40"
             >
               <span className="relative z-10">Fale Conosco Agora</span>
               <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               <div className="absolute inset-0 -translate-x-full bg-[hsl(185,72%,38%)] transition-transform duration-500 group-hover:translate-x-0" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
