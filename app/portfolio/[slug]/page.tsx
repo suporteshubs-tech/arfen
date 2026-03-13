@@ -91,21 +91,6 @@ export default async function ProjectPage({
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground animate-fade-in-up delay-200">
                 {project.description}
               </p>
-
-              {/* Visit Site Button for websites */}
-              {project.siteUrl && (
-                <div className="mt-8 animate-fade-in-up delay-300">
-                  <a
-                    href={project.siteUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 font-display text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30"
-                  >
-                    <ExternalLink className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                    Visitar Site
-                  </a>
-                </div>
-              )}
             </div>
 
             {/* Main showcase - Image or Video */}

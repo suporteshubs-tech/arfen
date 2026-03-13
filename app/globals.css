@@ -59,25 +59,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Performance optimization */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* Use GPU acceleration for animations */
-.animate-float,
-.animate-glow-pulse,
-.animate-mesh,
-.animate-marquee-left,
-.animate-marquee-right {
-  will-change: transform;
-  transform: translateZ(0);
-}
-
 /* Animations */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
@@ -230,11 +211,11 @@ html {
 }
 
 .animate-marquee-left {
-  animation: marquee-left 60s linear infinite;
+  animation: marquee-left 80s linear infinite;
 }
 
 .animate-marquee-right {
-  animation: marquee-right 60s linear infinite;
+  animation: marquee-right 80s linear infinite;
 }
 
 .marquee-row:hover .animate-marquee-left,
