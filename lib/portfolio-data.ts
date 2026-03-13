@@ -13,10 +13,116 @@ export interface Project {
   image: string
   description: string
   videoUrl?: string
+  siteUrl?: string
 }
 
 export const projects: Project[] = [
   // Artes
+  // Boi Feliz - Nutrição Animal
+  {
+    slug: "boi-feliz-deficiencias",
+    title: "Boi Feliz - Deficiências",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Boi Feliz",
+    rating: 5.0,
+    testimonial: "Campanha educacional que aumentou o reconhecimento da marca no agronegócio.",
+    team: "Equipe Arfen",
+    teamRole: "Marketing Agro & Design",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-CQ0dQaVpvEQqQfDweFu0s9pKcvgU9n.jpeg",
+    description: "Arte educativa sobre sinais de alerta em bovinos: pelo arrepiado e perda de peso. Destaca prevenção com alimentação, água limpa, vacinação, controle de pragas e espaço limpo.",
+  },
+  {
+    slug: "boi-feliz-seguranca",
+    title: "Boi Feliz - Segurança",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Boi Feliz",
+    rating: 5.0,
+    testimonial: "Design premium que transmitiu confiança e profissionalismo no mercado pecuário.",
+    team: "Equipe Arfen",
+    teamRole: "Fotografia de Produto & Branding",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-rQQ3K6yPE00aVZQTbIDAKoA1ropLl9.png",
+    description: "Campanha institucional destacando segurança e confiança. Mostra produtor com produtos Boi Feliz, enfatizando registro MAPA e garantia de saúde e rendimento do rebanho.",
+  },
+  {
+    slug: "boi-feliz-revolucao",
+    title: "Boi Feliz - Revolução no Cocho",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Boi Feliz",
+    rating: 5.0,
+    testimonial: "Arte impactante que gerou forte engajamento e debate sobre produtividade pecuária.",
+    team: "Equipe Arfen",
+    teamRole: "Design Conceitual & Marketing",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-3XJZkwwnmpHjOeZpL81OT6vjVSxo18.png",
+    description: "Arte dramática com touro e cortes de carne empilhados. Mensagem provocativa sobre lucro na pecuária e revolução no rendimento do pasto com Boi Feliz.",
+  },
+  {
+    slug: "boi-feliz-bezerros",
+    title: "Boi Feliz - Uso em Bezerros",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Boi Feliz",
+    rating: 5.0,
+    testimonial: "Conteúdo educacional que esclareceu dúvidas frequentes dos pecuaristas.",
+    team: "Equipe Arfen",
+    teamRole: "Marketing Educacional",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/21-xSwLimHrILiXnKih45fcHVuTFhMd6r.png",
+    description: "Arte respondendo dúvida comum: pode usar em bezerros? Sim, indicado para todas as idades. Começar cedo garante adultos muito mais produtivos. Mostra diferentes raças bovinas.",
+  },
+  {
+    slug: "boi-feliz-diferencial-tecnico",
+    title: "Boi Feliz - Diferencial Técnico",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Boi Feliz",
+    rating: 5.0,
+    testimonial: "Design sofisticado que valorizou o diferencial científico do produto.",
+    team: "Equipe Arfen",
+    teamRole: "Branding Técnico & Marketing",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11-NJ5IaZLipiaIkqBL4r7xjaV9GPlgrp.png",
+    description: "Arte institucional sobre o poder da sinergia entre minerais e vitaminas. Não é apenas mistura, é ciência. Cada componente escolhido para potencializar o ganho de peso.",
+  },
+  {
+    slug: "deyse-limma-retro",
+    title: "Deyse Limma - Viagem no Tempo",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Deyse Limma",
+    rating: 5.0,
+    testimonial: "Arte elegante que capturou perfeitamente a essência retrô do evento musical.",
+    team: "Equipe Arfen",
+    teamRole: "Design Musical & Branding de Artista",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1770747240192-bRUCofWuDH1t8Srw8DqEHHAj1JoUOU.png",
+    description: "Arte promocional retrô para evento musical. Destaca a artista Deyse Limma em cenário vintage com iluminação neon e atmosfera de bar clássico, transmitindo elegância nostálgica.",
+  },
+  {
+    slug: "iskerda-artilheiro",
+    title: "Iskerda - Artilheiro",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "Iskerda Futebol",
+    rating: 5.0,
+    testimonial: "Design impactante que celebrou conquistas esportivas com identidade visual marcante.",
+    team: "Equipe Arfen",
+    teamRole: "Design Esportivo & Branding",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-50jdWjGM5pxGJghBUNrQJBOlK4K8O8.png",
+    description: "Arte esportiva celebrando jogador artilheiro. Apresenta atleta com coroa dourada, uniforme Nike preto, bola e chuteira em ouro. Design premium com tema de campeão e realeza.",
+  },
+  {
+    slug: "investelab-treinamento",
+    title: "InvesteLab - Treinamento Financeiro",
+    category: "artes",
+    categoryLabel: "Arte Gráfica",
+    client: "InvesteLab",
+    rating: 5.0,
+    testimonial: "Design profissional que transmitiu credibilidade e autoridade no mercado financeiro.",
+    team: "Equipe Arfen",
+    teamRole: "Marketing Digital & Branding Financeiro",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-10%20at%2015.22.46-2OqMWQTBmRIOsw0RV5LXZGvUsVQ1PP.jpeg",
+    description: "Campanha de marketing para treinamento de investimentos. Arte em preto e branco com profissional confiante, convidando a conhecer alternativas ao CDB com call-to-action direto.",
+  },
   {
     slug: "heineken-bottle",
     title: "Heineken",
@@ -1332,6 +1438,7 @@ export const projects: Project[] = [
     teamRole: "Web Design & Dev",
     image: "/sites/restart-ajuda.png",
     description: "Landing page institucional dark com tipografia impactante ciano, CTA de conversao e video embed integrado.",
+    siteUrl: "https://restart-ajuda.vercel.app",
   },
   {
     slug: "megaclick-landing-site",
@@ -1345,6 +1452,7 @@ export const projects: Project[] = [
     teamRole: "SaaS Landing Page",
     image: "/sites/megaclick-landing.png",
     description: "Landing page SaaS dark-blue com metricas de resultados, cards de beneficios e CTA de conversao otimizado.",
+    siteUrl: "https://www.megaclickboost.com",
   },
   {
     slug: "vida-financeira-landing-site",
@@ -1358,6 +1466,7 @@ export const projects: Project[] = [
     teamRole: "Sales Page Design",
     image: "/sites/vida-financeira-landing.png",
     description: "Pagina de vendas premium dark-gold com metodologia comprovada, video de apresentacao e prova social.",
+    siteUrl: "https://www.metodocodigodariqueza.com",
   },
   {
     slug: "freebook-colecao-site",
@@ -1371,6 +1480,7 @@ export const projects: Project[] = [
     teamRole: "E-commerce Digital",
     image: "/sites/freebook-colecao.png",
     description: "Plataforma de livros digitais dark-gold com carrossel de colecoes, cards de produtos e design editorial premium.",
+    siteUrl: "https://v0-bookgrid.vercel.app/",
   },
   {
     slug: "mega-clique-dashboard-site",
@@ -1384,6 +1494,7 @@ export const projects: Project[] = [
     teamRole: "Dashboard & App Web",
     image: "/sites/mega-clique-dashboard.png",
     description: "Dashboard SaaS dark com graficos de performance, KPIs coloridos, taxa de sucesso e analises diarias.",
+    siteUrl: "https://megaclick.bolt.host/",
   },
   {
     slug: "textium-ebook-store-site",
@@ -1410,6 +1521,7 @@ export const projects: Project[] = [
     teamRole: "E-commerce Esportivo",
     image: "/sites/st-city-store.png",
     description: "E-commerce dark-gold de camisas de futebol com banner hero dinamico, bandeira do Brasil e navegacao por categorias.",
+    siteUrl: "https://streetcity.lojavirtualnuvem.com.br/?preview_theme_installation_id=6162882",
   },
   {
     slug: "svk-store-site",
@@ -1423,6 +1535,7 @@ export const projects: Project[] = [
     teamRole: "E-commerce Fashion",
     image: "/sites/svk-store.png",
     description: "E-commerce de moda masculina light-yellow com grid de produtos, precos com desconto e navegacao por categorias.",
+    siteUrl: "https://prefixsyk2.lojavirtualnuvem.com.br/?exit_preview_theme_installation",
   },
   {
     slug: "bookgrid-library-site",
@@ -1436,6 +1549,7 @@ export const projects: Project[] = [
     teamRole: "Plataforma Digital",
     image: "/sites/bookgrid-library.png",
     description: "Plataforma de livros digitais dark com fundo de estante, busca por titulo/autor, tags de categorias e CTA gold Explore Full Library.",
+    siteUrl: "https://www.ebookgridstore.com",
   },
 ]
 

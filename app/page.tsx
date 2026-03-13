@@ -1,12 +1,25 @@
+import dynamic from "next/dynamic"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Hero from "@/components/sections/hero"
-import Founders from "@/components/sections/founders"
 import Services from "@/components/sections/services"
-import Portfolio from "@/components/sections/portfolio"
-import Offices from "@/components/sections/offices"
-import Testimonials from "@/components/sections/testimonials"
-import CTA from "@/components/sections/cta"
+
+// Lazy load sections that are below the fold
+const Founders = dynamic(() => import("@/components/sections/founders"), {
+  loading: () => <div className="min-h-[600px]" />,
+})
+const Portfolio = dynamic(() => import("@/components/sections/portfolio"), {
+  loading: () => <div className="min-h-[600px]" />,
+})
+const Offices = dynamic(() => import("@/components/sections/offices"), {
+  loading: () => <div className="min-h-[400px]" />,
+})
+const Testimonials = dynamic(() => import("@/components/sections/testimonials"), {
+  loading: () => <div className="min-h-[400px]" />,
+})
+const CTA = dynamic(() => import("@/components/sections/cta"), {
+  loading: () => <div className="min-h-[300px]" />,
+})
 
 export default function Page() {
   return (
