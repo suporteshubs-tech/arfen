@@ -52,12 +52,14 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Link
-            href="/#contato"
+          <a
+            href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-primary px-7 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:brightness-110 hover:shadow-lg hover:shadow-primary/25"
           >
             Fale Conosco
-          </Link>
+          </a>
         </div>
 
         <button
@@ -93,7 +95,9 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/#contato"
+              href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 rounded-full bg-primary px-8 py-3 text-center text-sm font-semibold text-primary-foreground"
               onClick={() => setMobileOpen(false)}
             >
