@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Inter, Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import WhatsAppButton from "@/components/whatsapp-button"
-import WhatsAppFloat from "@/components/whatsapp-float"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" })
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
         <WhatsAppButton />
-        <WhatsAppFloat />
       </body>
     </html>
   )
