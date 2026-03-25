@@ -1,4 +1,4 @@
-export type ProjectCategory = "artes" | "capas" | "logos" | "videos" | "sites"
+export type ProjectCategory = "artes" | "capas" | "logos" | "videos" | "sites" | "thumbnail" | "ia"
 
 export interface Project {
   slug: string
@@ -1436,6 +1436,88 @@ export const projects: Project[] = [
     teamRole: "Plataforma Digital",
     image: "/sites/bookgrid-library.png",
     description: "Plataforma de livros digitais dark com fundo de estante, busca por titulo/autor, tags de categorias e CTA gold Explore Full Library.",
+  },
+
+  // Thumbnails
+  {
+    slug: "thumbnail-youtube-arfen-1",
+    title: "Thumbnail YouTube",
+    category: "thumbnail",
+    categoryLabel: "Thumbnail",
+    client: "Arfen",
+    rating: 5.0,
+    testimonial: "Thumbnail profissional que aumentou o CTR do canal em 80%.",
+    team: "Equipe Arfen",
+    teamRole: "Design de Thumbnail",
+    image: "/arts/design-trends-2025.png",
+    description: "Thumbnail impactante com tipografia ousada e composicao visual estrategica para maximo clique.",
+  },
+  {
+    slug: "thumbnail-youtube-arfen-2",
+    title: "Thumbnail Impacto",
+    category: "thumbnail",
+    categoryLabel: "Thumbnail",
+    client: "Criador de Conteudo",
+    rating: 5.0,
+    testimonial: "Design que fez nosso video viralizar com 1M+ de visualizacoes.",
+    team: "Equipe Arfen",
+    teamRole: "Design de Thumbnail",
+    image: "/arts/megaclick-strategy.png",
+    description: "Thumbnail com rosto de apresentador, texto em destaque e cores de alto contraste.",
+  },
+  {
+    slug: "thumbnail-youtube-arfen-3",
+    title: "Thumbnail Premium",
+    category: "thumbnail",
+    categoryLabel: "Thumbnail",
+    client: "Canal de Tecnologia",
+    rating: 5.0,
+    testimonial: "CTR aumentou de 4% para 12% com o novo design de thumbnails.",
+    team: "Equipe Arfen",
+    teamRole: "Design de Thumbnail",
+    image: "/arts/iphone-17-2025.png",
+    description: "Thumbnail minimalista para canal tech com produto em destaque e tipografia premium.",
+  },
+
+  // IA
+  {
+    slug: "ia-visual-arfen-1",
+    title: "Arte com IA",
+    category: "ia",
+    categoryLabel: "Inteligencia Artificial",
+    client: "Arfen",
+    rating: 5.0,
+    testimonial: "Producao visual com IA que reduziu custos e triplicou a velocidade de entrega.",
+    team: "Equipe Arfen",
+    teamRole: "Design com IA",
+    image: "/arts/design-vr.png",
+    description: "Criacao visual avancada utilizando inteligencia artificial para composicoes unicas.",
+  },
+  {
+    slug: "ia-visual-arfen-2",
+    title: "Campanha IA",
+    category: "ia",
+    categoryLabel: "Inteligencia Artificial",
+    client: "Marca Digital",
+    rating: 5.0,
+    testimonial: "Campanha gerada com IA que ninguem conseguiu diferenciar de fotografia real.",
+    team: "Equipe Arfen",
+    teamRole: "Producao com IA",
+    image: "/arts/ai-business-workshop.png",
+    description: "Imagens geradas com inteligencia artificial para campanha publicitaria completa.",
+  },
+  {
+    slug: "ia-visual-arfen-3",
+    title: "Identidade IA",
+    category: "ia",
+    categoryLabel: "Inteligencia Artificial",
+    client: "Startup Tech",
+    rating: 5.0,
+    testimonial: "Identidade visual gerada com IA em tempo recorde para o lancamento da startup.",
+    team: "Equipe Arfen",
+    teamRole: "Branding com IA",
+    image: "/arts/chess-positioning-strategy.jpg",
+    description: "Desenvolvimento de identidade visual completa com auxilio de ferramentas de IA generativa.",
   },
 ]
 

@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { Palette, BookOpen, PenTool, Video, Globe } from "lucide-react"
+import { Palette, BookOpen, PenTool, Video, Globe, ImagePlay, Sparkles } from "lucide-react"
 import { projects } from "@/lib/portfolio-data"
 import type { ProjectCategory } from "@/lib/portfolio-data"
 
@@ -14,6 +14,8 @@ const allCategories = [
   { id: "logos" as ProjectCategory, label: "Logos", icon: PenTool },
   { id: "videos" as ProjectCategory, label: "Videos", icon: Video },
   { id: "sites" as ProjectCategory, label: "Sites", icon: Globe },
+  { id: "thumbnail" as ProjectCategory, label: "Thumbnail", icon: ImagePlay },
+  { id: "ia" as ProjectCategory, label: "IA", icon: Sparkles },
 ]
 
 export default function PortfolioPage() {
