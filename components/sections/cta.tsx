@@ -21,6 +21,15 @@ export default function CTA() {
               novos patamares no mercado digital.
             </p>
             <div className="mt-12">
+            <Link
+              href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-primary px-12 py-4 text-sm font-bold text-primary-foreground shadow-2xl shadow-primary/25 transition-all duration-300 hover:shadow-primary/40 hover:brightness-110"
+            >
+              Fale Conosco Agora
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
               <Link
                 href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
                 target="_blank"
