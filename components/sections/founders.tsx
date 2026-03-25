@@ -89,12 +89,17 @@ export default function Founders() {
                   {founder.description}
                 </p>
                 <div className="mt-6 flex items-center gap-3">
-                  {[Instagram, Linkedin].map((Icon, idx) => (
+                  {[
+                    { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/arfenbr" },
+                    { Icon: Linkedin, label: "LinkedIn", href: "#" },
+                  ].map(({ Icon, label, href }) => (
                     <a
-                      key={idx}
-                      href="#"
-                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-muted-foreground backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/10"
-                      aria-label={`Social link ${idx}`}
+                      key={label}
+                      href={href}
+                      target={href !== "#" ? "_blank" : undefined}
+                      rel={href !== "#" ? "noopener noreferrer" : undefined}
+                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                      aria-label={label}
                     >
                       <Icon className="h-4 w-4" />
                     </a>
