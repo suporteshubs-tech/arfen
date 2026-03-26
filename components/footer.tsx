@@ -25,13 +25,15 @@ export default function Footer() {
             </p>
             <div className="mt-7 flex gap-3">
               {[
-                { icon: Instagram, label: "Instagram" },
-                { icon: Linkedin, label: "LinkedIn" },
-                { icon: Mail, label: "Email" },
-              ].map(({ icon: Icon, label }) => (
+                { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/arfenbr" },
+                { icon: Linkedin, label: "LinkedIn", href: "#" },
+                { icon: Mail, label: "Email", href: "#" },
+              ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noopener noreferrer" : undefined}
                   aria-label={label}
                   className="flex h-10 w-10 items-center justify-center rounded-xl border border-border/30 bg-card/30 text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/5 hover:text-primary hover:shadow-lg hover:shadow-primary/5"
                 >

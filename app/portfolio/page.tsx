@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { Palette, BookOpen, PenTool, Video, Globe } from "lucide-react"
+import { Palette, BookOpen, PenTool, Video, Globe, ImagePlay, Sparkles } from "lucide-react"
 import { projects } from "@/lib/portfolio-data"
 import type { ProjectCategory } from "@/lib/portfolio-data"
 
@@ -14,6 +14,8 @@ const allCategories = [
   { id: "logos" as ProjectCategory, label: "Logos", icon: PenTool },
   { id: "videos" as ProjectCategory, label: "Videos", icon: Video },
   { id: "sites" as ProjectCategory, label: "Sites", icon: Globe },
+  { id: "thumbnail" as ProjectCategory, label: "Thumbnail", icon: ImagePlay },
+  { id: "ia" as ProjectCategory, label: "IA", icon: Sparkles },
 ]
 
 export default function PortfolioPage() {
@@ -47,33 +49,35 @@ export default function PortfolioPage() {
             </div>
 
             {/* Tabs */}
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
-              <button
-                type="button"
-                onClick={() => setActiveTab("todos")}
-                className={`rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
-                  activeTab === "todos"
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-                    : "border border-border/50 bg-card/30 text-muted-foreground hover:border-primary/30 hover:text-foreground"
-                }`}
-              >
-                Todos
-              </button>
-              {allCategories.map((cat) => (
+            <div className="relative mt-12">
+              <div className="scrollbar-hide flex items-center gap-3 overflow-x-auto pb-2">
                 <button
-                  key={cat.id}
                   type="button"
-                  onClick={() => setActiveTab(cat.id)}
-                  className={`flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
-                    activeTab === cat.id
+                  onClick={() => setActiveTab("todos")}
+                  className={`flex-shrink-0 rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
+                    activeTab === "todos"
                       ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
                       : "border border-border/50 bg-card/30 text-muted-foreground hover:border-primary/30 hover:text-foreground"
                   }`}
                 >
-                  <cat.icon className="h-4 w-4" />
-                  {cat.label}
+                  Todos
                 </button>
-              ))}
+                {allCategories.map((cat) => (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => setActiveTab(cat.id)}
+                    className={`flex flex-shrink-0 items-center gap-2 rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
+                      activeTab === cat.id
+                        ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
+                        : "border border-border/50 bg-card/30 text-muted-foreground hover:border-primary/30 hover:text-foreground"
+                    }`}
+                  >
+                    <cat.icon className="h-4 w-4" />
+                    {cat.label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Portfolio grid */}
@@ -95,7 +99,6 @@ export default function PortfolioPage() {
                     </div>
                     <div className="p-5">
                       <h3 className="text-base font-bold text-foreground">{project.title}</h3>
-                      <div className="mt-3 h-px w-8 rounded-full bg-primary/30" />
                     </div>
                   </div>
                 ) : (
