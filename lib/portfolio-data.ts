@@ -1674,6 +1674,19 @@ export const projects: Project[] = [
     image: "/thumbnail/lovable.png",
     description: "Thumbnail clean com texto bold 'LOVABLE' em branco sobre fundo escuro, logo coracao com gradiente laranja-roxo-azul ao centro com brilho e reflexos de luz nos cantos.",
   },
+  {
+    slug: "thumbnail-voce-nao-esta-atrasado",
+    title: "Thumbnail - Voce Nao Esta Atrasado",
+    category: "thumbnail",
+    categoryLabel: "Thumbnail",
+    client: "Canal de Negocios",
+    rating: 5.0,
+    testimonial: "Thumbnail motivacional que gerou enorme identificacao com o publico e disparou as visualizacoes.",
+    team: "Equipe Arfen",
+    teamRole: "Design de Thumbnail",
+    image: "/thumbnail/voce-nao-esta-atrasado.png",
+    description: "Thumbnail impactante com homem em preto e branco de bracos cruzados, olhos cobertos por '$$$$$$' em vermelho, texto bold branco e vermelho 'VOCE NAO ESTA ATRASADO' e lampada no canto superior direito sobre fundo preto.",
+  },
 
   // IA
   {
