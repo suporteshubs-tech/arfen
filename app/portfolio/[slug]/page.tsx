@@ -370,7 +370,9 @@ export default async function ProjectPage({
                 </p>
                 <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                   <Link
-                    href="/#contato"
+                    href="https://api.whatsapp.com/send/?phone=5511992580843&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group inline-flex items-center gap-3 rounded-full bg-primary px-10 py-4 font-display text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30"
                   >
                     <MessageCircle className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />

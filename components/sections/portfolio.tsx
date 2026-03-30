@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Palette, BookOpen, PenTool, Video, Globe } from "lucide-react"
+import { Palette, BookOpen, PenTool, Video, Globe, ImagePlay, Sparkles } from "lucide-react"
 import { getProjectsByCategory } from "@/lib/portfolio-data"
 
 const categories = [
@@ -8,6 +8,8 @@ const categories = [
   { id: "logos" as const, label: "Logos", icon: PenTool, direction: "left" as const },
   { id: "videos" as const, label: "Videos", icon: Video, direction: "right" as const },
   { id: "sites" as const, label: "Sites", icon: Globe, direction: "left" as const },
+  { id: "thumbnail" as const, label: "Thumbnail", icon: ImagePlay, direction: "right" as const },
+  { id: "ia" as const, label: "IA", icon: Sparkles, direction: "left" as const },
 ]
 
 function MarqueeCard({
