@@ -1856,6 +1856,19 @@ export const projects: Project[] = [
     image: "/thumbnail/voce-nao-esta-atrasado.png",
     description: "Thumbnail impactante com homem em preto e branco de bracos cruzados, olhos cobertos por '$$$$$$' em vermelho, texto bold branco e vermelho 'VOCE NAO ESTA ATRASADO' e lampada no canto superior direito sobre fundo preto.",
   },
+  {
+    slug: "thumbnail-eua-vs-ira",
+    title: "Thumbnail - EUA vs Ira",
+    category: "thumbnail",
+    categoryLabel: "Thumbnail",
+    client: "Canal de Geopolitica",
+    rating: 5.0,
+    testimonial: "Thumbnail cinematografica que capturou a tensao do conflito e gerou enorme alcance organico.",
+    team: "Equipe Arfen",
+    teamRole: "Design de Thumbnail",
+    image: "/thumbnail/eua-vs-ira.jpeg",
+    description: "Thumbnail geopolitica dramatica com soldado de mascara de gas entre as bandeiras dos EUA e do Ira, avioes de guerra F-16 sobrevoando e explosoes ao fundo em tons de laranja e cinza.",
+  },
 
   // IA
   {
